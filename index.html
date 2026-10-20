@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#171714">
+    <meta name="description"
+        content="Discover delicious Nigerian favourites at Naija Bites. Explore our menu and prepare your order online.">
+    <title>Naija Bites — Nigerian Food, Beautifully Served</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="announcement" id="top">
+        <p>GOOD FOOD. GOOD MOOD. <span>Made with love in Nigeria.</span></p>
+    </div>
+
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Naija Bites home">
+            <span class="brand-mark">N<span>.</span></span>
+            <span class="brand-name">NAIJA BITES<small>THE TASTE OF HOME</small></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#top">Home</a>
+            <a href="#story">Our Story</a>
+            <a href="#menu">The Menu</a>
+            <a href="#contact">Contact</a>
+            <button class="cart-nav" id="cartNav" type="button">
+                Your Order <span id="cartCount">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy reveal">
+                <p class="eyebrow"><span></span> A LITTLE TASTE OF NIGERIA</p>
+                <h1>Flavour that<br>feels like <em>home.</em></h1>
+                <p class="hero-description">
+                    From smoky party jollof to soul-warming classics,
+                    discover Nigerian food made to bring people together.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#menu">Explore the menu <span>↗</span></a>
+                    <a class="text-link" href="#story">Our philosophy <span>↓</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-star">✳</span>
+                    <p>BIG FLAVOUR. <strong>REAL NIGERIAN SOUL.</strong></p>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85"
+                    alt="A colourful, freshly prepared meal" class="hero-image">
+                <div class="image-label">
+                    <span class="label-icon">✳</span>
+                    <div><strong>Made with heart</strong><small>Inspired by home</small></div>
+                </div>
+                <div class="hero-stamp">GOOD<br>FOOD<br><span>ONLY.</span></div>
+            </div>
+        </section>
+
+        <section class="intro-strip">
+            <span>FRESHLY PREPARED</span><i>✳</i>
+            <span>LOCALLY INSPIRED</span><i>✳</i>
+            <span>MADE TO SHARE</span><i>✳</i>
+            <span>FULL OF FLAVOUR</span>
+        </section>
+
+        <section class="story section-pad" id="story">
+            <div class="story-image reveal">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+                    alt="Fresh ingredients prepared for a meal" loading="lazy">
+                <span class="image-caption">A seat at our table is a seat at home.</span>
+            </div>
+            <div class="story-copy reveal">
+                <p class="eyebrow"><span></span> MORE THAN A MEAL</p>
+                <h2>Our kind of food<br>tells a <em>story.</em></h2>
+                <p>
+                    Nigerian food is more than what's on the plate. It's the
+                    Sunday afternoons, the family gatherings, the laughter, and
+                    that first unforgettable spoonful.
+                </p>
+                <p>
+                    Naija Bites is a restaurant concept celebrating those familiar
+                    flavours with a fresh, thoughtful touch.
+                </p>
+                <a class="text-link" href="#menu">Find your favourite <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="menu-section section-pad" id="menu">
+            <div class="section-heading reveal">
+                <div>
+                    <p class="eyebrow"><span></span> STRAIGHT FROM OUR KITCHEN</p>
+                    <h2>Good things<br>are on the <em>menu.</em></h2>
+                </div>
+                <p>Comforting classics, bold flavours, and something delicious for every kind of day.</p>
+            </div>
+
+            <div class="menu-filters" aria-label="Filter menu">
+                <button class="filter-btn active" data-filter="all" type="button">Everything</button>
+                <button class="filter-btn" data-filter="rice" type="button">Rice dishes</button>
+                <button class="filter-btn" data-filter="grill" type="button">Grills</button>
+                <button class="filter-btn" data-filter="soup" type="button">Soups</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="food-card reveal" data-category="rice">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85"
+                            alt="A freshly prepared rice dish" loading="lazy">
+                        <span class="food-tag">A HOUSE FAVOURITE</span>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Party Jollof Rice</h3>
+                            <p>Smoky, rich and full of flavour.</p>
+                        </div>
+                        <span class="food-price">₦3,500</span>
+                    </div>
+                    <button class="add-button" data-id="jollof" type="button">Add to order <span>+</span></button>
+                </article>
+
+                <article class="food-card reveal" data-category="grill">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=85"
+                            alt="Grilled meat served with fresh sides" loading="lazy">
+                        <span class="food-tag">FRESH OFF THE GRILL</span>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Suya Special</h3>
+                            <p>Spiced, savoury and satisfying.</p>
+                        </div>
+                        <span class="food-price">₦4,500</span>
+                    </div>
+                    <button class="add-button" data-id="suya" type="button">Add to order <span>+</span></button>
+                </article>
+
+                <article class="food-card reveal" data-category="soup">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                            alt="A hearty bowl of food" loading="lazy">
+                        <span class="food-tag">COMFORT IN A BOWL</span>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Soup & Swallow</h3>
+                            <p>A comforting Nigerian classic.</p>
+                        </div>
+                        <span class="food-price">₦4,000</span>
+                    </div>
+                    <button class="add-button" data-id="soup" type="button">Add to order <span>+</span></button>
+                </article>
+
+                <article class="food-card reveal" data-category="rice">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85"
+                            alt="A fresh and colourful meal" loading="lazy">
+                        <span class="food-tag">FRESH & FILLING</span>
+                    </div>
+                    <div class="food-info">
+                        <div>
+                            <h3>Rice Bowl Special</h3>
+                            <p>A colourful, satisfying bowl.</p>
+                        </div>
+                        <span class="food-price">₦3,000</span>
+                    </div>
+                    <button class="add-button" data-id="bowl" type="button">Add to order <span>+</span></button>
+                </article>
+            </div>
+            <p class="price-note">Demo menu: prices and food photography are illustrative and should be verified before
+                a real launch.</p>
+        </section>
+
+        <section class="statement">
+            <div class="statement-inner reveal">
+                <span class="statement-symbol">✳</span>
+                <p class="eyebrow">OUR LITTLE PHILOSOPHY</p>
+                <h2>Made with care.<br>Served with <em>joy.</em></h2>
+                <p>Good food doesn't need to be complicated. It just needs to be made with heart.</p>
+            </div>
+            <div class="statement-image">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85"
+                    alt="A meal ready to be shared" loading="lazy">
+            </div>
+        </section>
+
+        <section class="cart-section section-pad" id="cart">
+            <div class="section-heading cart-heading">
+                <div>
+                    <p class="eyebrow"><span></span> YOUR SELECTION</p>
+                    <h2>Your order,<br>your <em>way.</em></h2>
+                </div>
+                <button class="text-link clear-cart" id="clearCart" type="button">Clear order ↺</button>
+            </div>
+
+            <div class="cart-panel">
+                <div id="cartItems" class="cart-items">
+                    <p class="empty-cart">Your order is empty for now. Add something delicious from the menu above.</p>
+                </div>
+                <div class="cart-summary">
+                    <div><span>Subtotal</span><strong id="cartTotal">₦0</strong></div>
+                    <p>Delivery fees, if any, are arranged directly with the restaurant.</p>
+                    <button class="button button-dark checkout-button" id="checkoutBtn" type="button">Continue to
+                        WhatsApp <span>↗</span></button>
+                    <small>This demo prepares a message. No payment is collected on this website.</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-pad" id="contact">
+            <div class="contact-card reveal">
+                <p class="eyebrow"><span></span> LET'S MAKE IT A GOOD MEAL</p>
+                <h2>Something delicious<br>is just a <em>click away.</em></h2>
+                <p>Build your order above and continue through WhatsApp when the restaurant's contact number is
+                    configured.</p>
+                <a class="button button-light" href="#menu">Explore the menu <span>↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#top">
+            <span class="brand-mark">N<span>.</span></span>
+            <span class="brand-name">NAIJA BITES<small>THE TASTE OF HOME</small></span>
+        </a>
+        <p>Good Nigerian food. A little more joy.</p>
+        <a class="back-top" href="#top">Back to top ↑</a>
+        <small class="copyright">© <span id="year"></span> Naija Bites. Student portfolio demo.</small>
+    </footer>
+</body>
+
+</html>
